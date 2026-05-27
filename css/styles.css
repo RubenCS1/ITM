@@ -1,19 +1,20 @@
 /*DECLARACIÓN DE VARIABLES GLOBALES*/
 
 :root{
-    --color-primario: #258a22;
+    --color-bordes: #3b9ede;
+    --color-primario: #289be7;
     --color-secundario: #87b608;
-    --color-background: #F9F8F5;
+    --color-background: #e9e5d8;
     --color-sombras: #e1f5ac;
-    --color-texto: #A1A5A6;
+    --color-texto: #1a1a1a;
     --color-titulo: #023102;
     --text-dafault: 'Open Sans';
     --color-parrafos: #4b4e4b;
+    --color-subtitulos: #0057fa;
 
 }
 
 /*ESTILOS GENERALES*/
-
 *{
     margin: 0;
     padding: 0;
@@ -22,29 +23,43 @@
     font-family: var(--text-dafault);
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 body{
     background: var(--color-background);
 }
 
+h1{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  color: var(--color-subtitulos)
+}
+
+a {
+  text-decoration: none; 
+}
+
+
+/*ESTILOS PARA LA PÁGINA INDEX*/
 .seccion-principal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 2rem 1rem;
+  padding: 20px;
   max-width: 360px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
-h1, h2, .seccion-principal h2 {
-  font-size: 1.4rem;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 0.5rem;
+#titulo-principal-index, .subt-index
+{
+    text-align: center;
+    margin-bottom: 0.5rem
 }
 
 .btn-principal {
@@ -53,15 +68,16 @@ h1, h2, .seccion-principal h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 1.5rem 1rem;
+  gap: 20px;
+  margin: 15px;
+  padding: 10px;
   background: #ffffff;
-  border: 1.5px solid #3b9ede;
+  border: 3px solid var(--color-bordes);
   border-radius: 12px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  color: #1a1a1a;;
+  color: var(--color-texto);
 }
 
 .btn-principal:hover {
@@ -70,5 +86,6 @@ h1, h2, .seccion-principal h2 {
 
 .btn-principal i {
   font-size: 2rem;
-  color: #3b9ede;
+  color: var(--color-primario);
 }
+
