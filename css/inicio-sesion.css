@@ -1,69 +1,70 @@
-.seccion-iniciar-sesion {
-  padding: 30px;
-  border-radius: 8px;
-  width: 320px;
-  align-items: center;
+/*ESTILOS PARA INICIAR SESIÓN */
+
+.seccion-iniciar-sesion{
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-.seccion-iniciar-sesion h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+#form-inicio-sesion{
+  display: flex;
+  flex-direction: column;
+  gap: 8px
 }
 
-form label {
-  display: block;
-  margin-bottom: 5px;
-  color: #555;
+#form-inicio-sesion label{
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-texto);
 }
 
-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+#form-inicio-sesion input{
+  padding: 15px;
+  border: 1.5px solid #363232;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #ffffff;
+  margin-bottom: 8px;
 }
 
-form .forgot {
-  display: block;
-  text-align: right;
-  font-size: 0.9em;
-  color: #007bff;
-  text-decoration: none;
-  margin-bottom: 15px;
+#form-inicio-sesion input:focus{
+  outline: none;
+  border-color: var(--color-primario);
 }
 
-form .forgot:hover {
-  text-decoration: underline;
+.resetPassword{
+  font-size: 15px;
+  color: var(--color-primario);
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
-form button {
-  width: 100%;
-  padding: 12px;
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
+#form-inicio-sesion button{
+  padding: 14px;
+  background: var(--color-primario);
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
+  margin-top: 5px;
+  width:100%;
 }
 
-form button:hover {
-  background: #0056b3;
+#form-inicio-sesion button:hover{
+  background: #1a7abf;
 }
 
-.register {
+.registrarse{
   text-align: center;
-  margin-top: 15px;
-  font-size: 0.9em;
+  font-size: 15px;
+  color: var(--color-texto);
+  margin-top: 10px;
 }
 
-.register a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.register a:hover {
-  text-decoration: underline;
+.registrarse a{
+  color: var(--color-primario);
+  font-weight: 600;
 }

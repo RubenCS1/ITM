@@ -1,0 +1,95 @@
+/*ESTILOS PARA REGISTRO DE CLIENTE */
+
+.seccion-registro{
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#form-registro{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.titulo-paso{
+  font-size: 15px;
+  color: var(--color-parrafos);
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+#form-registro label{
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-texto);
+}
+
+#form-registro input,
+#form-registro select {
+  padding: 12px;
+  border: 1.5px solid #4b4949;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #ffffff;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+#form-registro input:focus,
+#form-registro select:focus {
+  outline: none;
+  border-color: var(--color-primario);
+}
+
+.caja-documento input {
+  border: none;
+}
+
+.caja-documento{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  border: 2px dashed;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.subir-documento i{
+  font-size: 30px;
+  color: #aaa;
+}
+
+.subir-documento p{
+  font-size: 15px;
+  color: #aaa;
+}
+
+.subir-documento input{
+  border: none;
+}
+
+
+#form-registro button{
+  padding: 14px;
+  background: var(--color-primario);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  width:100%;
+}
+
+#form-registro button:hover{
+  background: #1a7abf;
+}
