@@ -10,7 +10,7 @@
     --color-titulo: #023102;
     --text-dafault: 'Open Sans';
     --color-parrafos: #4b4e4b;
-    --color-subtitulos: #0057fa;
+    --color-subtitulos: #1900fa;
 
 }
 
@@ -88,4 +88,3 @@ a {
   font-size: 2rem;
   color: var(--color-primario);
 }
-

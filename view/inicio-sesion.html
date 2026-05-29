@@ -20,7 +20,7 @@
             <input type="password" id="password">
             <a href="#" class="resetPassword">¿Olvidaste tu contraseña?</a>
             <a href="main-cliente.html">
-                <button type="button">Ingresar</button>
+                <button type="submit">Ingresar</button>
             </a>
             <br>
             <p class="registrarse">¿Primera vez aquí? <a href="registro-cliente.html">Regístrate</a></p>
@@ -28,5 +28,19 @@
 
     </section>
     
+    <script>
+    const rol = localStorage.getItem('rol');
+
+    document.getElementById('form-inicio-sesion').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        if (rol === 'cliente') {
+            window.location.href = 'main-cliente.html';
+        } else {
+            window.location.href = 'main-prestador.html';
+        }
+    });
+</script>
+
 </body>
 </html>

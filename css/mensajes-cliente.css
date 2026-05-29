@@ -1,0 +1,118 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 6px;
+  border-bottom: 2px solid var(--color-bordes);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.navbar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  color: var(--color-parrafos);
+  gap: 4px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.navbar a i {
+  font-size: 1.2rem;
+  color: var(--color-primario);
+}
+
+.navbar a:hover {
+  color: var(--color-primario);
+}
+
+
+
+/* MENSAJES */
+.seccion-mensajes {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.seccion-mensajes h2 {
+  text-align: left;
+  color: var(--color-texto);
+  margin: 0 0 14px 0;
+  padding: 0;
+}
+
+.tarjeta-mensaje {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.avatar-mensaje {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.badge-mensaje {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  background: red;
+  color: #ffffff;
+  font-size: 0.65rem;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-mensaje {
+  flex: 1;
+}
+
+.mensaje-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nombre-contacto {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-texto);
+}
+
+.hora-mensaje {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.ultimo-mensaje {
+  font-size: 0.85rem;
+  color: var(--color-parrafos);
+  margin-top: 3px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/solicitudes-prestador.css">
+    <link rel="stylesheet" href="../lib/FontAwesome/css/all.min.css">
+    <link rel="shortcut icon" href="../img/Logo.jpg">
+    <title>Mis Solicitudes</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="main-prestador.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="solicitudes-prestador.html"><i class="fa-solid fa-file-lines"></i> Solicitudes</a>
+        <a href="mensajes-cliente.html"><i class="fa-solid fa-message"></i> Mensajes</a>
+        <a href="notificaciones-cliente.html"><i class="fa-solid fa-bell"></i> Alertas</a>
+        <a href="perfil-cliente.html"><i class="fa-solid fa-user"></i> Perfil</a>
+    </nav>
+
+    <!-- ENCABEZADO CON FILTROS -->
+    <div class="encabezado-solicitudes">
+        <h3>Mis Solicitudes</h3>
+        <div class="filtros">
+            <button class="filtro activo">Pendientes</button>
+            <button class="filtro">Activas</button>
+            <button class="filtro">Finalizadas</button>
+        </div>
+    </div>
+
+    <section class="seccion-solicitudes-prestador">
+
+        <!-- TARJETA 1 -->
+        <div class="tarjeta-solicitud-p">
+            <div class="solicitud-header">
+                <div class="avatar-cliente">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="solicitud-datos">
+                    <p class="nombre-cliente">Laura Sánchez</p>
+                    <div class="solicitud-estado">
+                        <span class="badge-pendiente">Pendiente</span>
+                        <span class="fecha">16 de abr</span>
+                    </div>
+                </div>
+            </div>
+            <span class="tag-servicio">Plomería</span>
+            <p class="descripcion">Reparación urgente de fuga de agua en la cocina. El problema es debajo del lavaplatos.</p>
+            <p class="detalle"><i class="fa-solid fa-location-dot"></i> Cra 15 #85-23, Chapinero, Bogotá</p>
+            <p class="detalle"><i class="fa-regular fa-calendar"></i> jueves, 16 de abril de 2026 &nbsp; <i class="fa-regular fa-clock"></i> 10:00 AM</p>
+            <div class="botones-solicitud">
+                <button class="btn-aceptar"><i class="fa-solid fa-circle-check"></i> Aceptar</button>
+                <button class="btn-rechazar"><i class="fa-solid fa-circle-xmark"></i> Rechazar</button>
+            </div>
+        </div>
+
+        <!-- TARJETA 2 -->
+        <div class="tarjeta-solicitud-p">
+            <div class="solicitud-header">
+                <div class="avatar-cliente">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="solicitud-datos">
+                    <p class="nombre-cliente">Pedro Morales</p>
+                    <div class="solicitud-estado">
+                        <span class="badge-pendiente">Pendiente</span>
+                        <span class="fecha">15 de abr</span>
+                    </div>
+                </div>
+            </div>
+            <span class="tag-servicio">Plomería</span>
+            <p class="descripcion">Instalación de lavamanos nuevo en baño principal</p>
+            <p class="detalle"><i class="fa-solid fa-location-dot"></i> Calle 127 #45-67, Usaquén, Bogotá</p>
+            <p class="detalle"><i class="fa-regular fa-calendar"></i> viernes, 17 de abril de 2026 &nbsp; <i class="fa-regular fa-clock"></i> 2:00 PM</p>
+            <div class="botones-solicitud">
+                <button class="btn-aceptar"><i class="fa-solid fa-circle-check"></i> Aceptar</button>
+                <button class="btn-rechazar"><i class="fa-solid fa-circle-xmark"></i> Rechazar</button>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

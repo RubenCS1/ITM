@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/main-prestador.css">
+    <link rel="stylesheet" href="../lib/FontAwesome/css/all.min.css">
+    <link rel="shortcut icon" href="../img/Logo.jpg">
+    <title>Inicio Prestador</title>
 </head>
 <body>
-    
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="main-prestador.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="solicitudes-prestador.html"><i class="fa-solid fa-file-lines"></i> Solicitudes</a>
+        <a href="mensajes-cliente.html"><i class="fa-solid fa-message"></i> Mensajes</a>
+        <a href="notificaciones-cliente.html"><i class="fa-solid fa-bell"></i> Alertas</a>
+        <a href="perfil-cliente.html"><i class="fa-solid fa-user"></i> Perfil</a>
+    </nav>
+
+    <!-- ENCABEZADO -->
+    <div class="encabezado-prestador">
+        <div class="encabezado-info">
+            <h3 class="nombre-prestador">Carlos Rodríguez</h3>
+            <span class="badge-verificado"><i class="fa-solid fa-circle-check"></i> Verificado</span>
+        </div>
+        <div class="avatar-prestador">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <!-- ESTADÍSTICAS -->
+        <div class="estadisticas">
+            <div class="stat">
+                <p class="stat-numero">12</p>
+                <p class="stat-label">Solicitudes recibidas</p>
+            </div>
+            <div class="stat">
+                <p class="stat-numero">4.8</p>
+                <p class="stat-label">Calificación promedio</p>
+            </div>
+            <div class="stat">
+                <p class="stat-numero">127</p>
+                <p class="stat-label">Trabajos completados</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="seccion-prestador">
+
+        <!-- ACCESOS RÁPIDOS -->
+        <div class="accesos-rapidos">
+            <a href="solicitudes-prestador.html" class="acceso">
+                <i class="fa-solid fa-file-lines"></i>
+                <p>Ver Solicitudes</p>
+            </a>
+            <a href="mensajes-prestador.html" class="acceso">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Mis Mensajes</p>
+            </a>
+        </div>
+
+        <!-- SOLICITUDES PENDIENTES -->
+        <h3 class="titulo-seccion">Solicitudes pendientes</h3>
+
+        <div class="tarjeta-solicitud-prestador">
+            <div class="solicitud-encabezado">
+                <div class="avatar-cliente">P</div>
+                <div class="solicitud-info">
+                    <p class="nombre-cliente">Pedro Morales</p>
+                    <p class="especialidad-solicitud">Jardinería</p>
+                </div>
+            </div>
+            <p class="descripcion-solicitud">Mantenimiento de jardín y poda de árboles</p>
+            <p class="fecha-solicitud">Solicitado: 13/4/2026</p>
+            <div class="botones-solicitud">
+                <button class="btn-aceptar">Aceptar</button>
+                <button class="btn-rechazar">Rechazar</button>
+            </div>
+        </div>
+
+        <!-- TRABAJOS ACTIVOS -->
+        <h3 class="titulo-seccion">Trabajos activos</h3>
+
+        <div class="tarjeta-trabajo-activo">
+            <div class="trabajo-info">
+                <p class="nombre-trabajo">Plomería</p>
+                <p class="nombre-cliente-trabajo">Laura Sánchez</p>
+            </div>
+            <i class="fa-solid fa-circle-check icono-activo"></i>
+        </div>
+
+    </section>
+
 </body>
 </html>
