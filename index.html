@@ -16,12 +16,12 @@
     <div class="seccion-principal">
         <h2 class="subt-index">¿Cómo deseas ingresar?</h2>
 
-        <a id="btn-cliente" class="btn-principal" href="inicio-sesion.html">
+        <a id="btn-cliente" class="btn-principal" href="view/inicio-sesion.html">
             <i class="fa-solid fa-circle-user"></i>
             Soy Cliente
         </a>
         
-        <a id="btn-prestador" class="btn-principal" href="inicio-sesion.html">
+        <a id="btn-prestador" class="btn-principal" href="view/inicio-sesion.html">
             <i class="fa-solid fa-briefcase"></i>
             Soy Prestador de Servicio
         </a>
@@ -31,12 +31,12 @@
 <!--Tenemeos que asignar un Rol para saber cual vista mostrar-->
 <script>
     document.getElementById('btn-cliente').addEventListener('click', function() {
-        this.href = 'inicio-sesion.html';
+        this.href = 'view/inicio-sesion.html';
         localStorage.setItem('rol', 'cliente');
     });
 
     document.getElementById('btn-prestador').addEventListener('click', function() {
-        this.href = 'inicio-sesion.html';
+        this.href = 'view/inicio-sesion.html';
         localStorage.setItem('rol', 'prestador');
     });
 </script>
